@@ -1,0 +1,18 @@
+{
+  "extra_packages": [
+    {
+      "url": "https://github.com/swift-loggers/swift-logger.git",
+      "upToNextMinor": "0.1.0",
+      "products": [
+        {"name": "LoggerLibrary", "package": "swift-logger"}
+      ]
+    },
+    {
+      "url": "https://github.com/swift-loggers/swift-logger-remote.git",
+      "upToNextMinor": "0.1.0",
+      "products": [
+        {"name": "LoggerRemote", "package": "swift-logger-remote"}
+      ]
+    }
+  ]
+}
