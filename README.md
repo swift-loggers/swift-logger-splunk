@@ -44,6 +44,9 @@ round. The host wires `flush()` from its own lifecycle hooks
 Requires Swift 6.0+. iOS 13.4, macOS 10.15.4, tvOS 13.4,
 watchOS 6.2, visionOS 1. MIT licensed.
 
+API reference (DocC):
+[swift-loggers.github.io/swift-logger-splunk](https://swift-loggers.github.io/swift-logger-splunk/documentation/loggersplunk/).
+
 ## Threat model
 
 `swift-logger-splunk` ships two `SplunkEndpoint` cases. Pick the
