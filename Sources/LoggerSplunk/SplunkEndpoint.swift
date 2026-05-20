@@ -7,7 +7,7 @@ import Foundation
 /// `SplunkEndpoint` has two cases that correspond to two distinct
 /// deployment shapes; pick the one that matches your trust model.
 ///
-/// ## ``SplunkEndpoint/hec(url:token:)``
+/// ## Direct delivery — `.hec(url:token:)`
 ///
 /// Direct delivery to a Splunk HTTP Event Collector. The adapter
 /// POSTs the framed HEC body to `url` **verbatim** -- it does not
@@ -31,7 +31,7 @@ import Foundation
 /// another intermediary you control), so the real HEC token never
 /// ships with the client.
 ///
-/// ## ``SplunkEndpoint/intake(url:authorizationHeader:)``
+/// ## Consumer-owned intake / proxy — `.intake(url:authorizationHeader:)`
 ///
 /// Delivery through a first-party intake / proxy / gateway endpoint
 /// owned by the consumer. The adapter POSTs the framed HEC body to
